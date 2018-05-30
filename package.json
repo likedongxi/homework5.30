@@ -6,15 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "webpack-dev-server",
+    "e2e": "nightwatch --config nightwatch.conf.BASIC.js",
     "bundle": "webpack -p"
   },
   "keywords": [],
   "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "dependencies": {
+    "chromedriver": "^2.38.3",
+    "env2": "^2.2.0",
+    "nightwatch": "^0.9.21",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "react-github-corner": "^0.3.0"
+    "react-github-corner": "^0.3.0",
+    "selenium-server": "^3.12.0"
   },
   "devDependencies": {
     "babel-core": "^6.20.0",
